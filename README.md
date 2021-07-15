@@ -9,14 +9,14 @@ Adjust number of accounts as desired.
 
 Coverage: `truffle run coverage --network development`
 
+# Description
+
 Audits have been completed on issuance and token contracts by Dedaub, Nonceblox, and peers. (The remaining contracts are dependencies provided by OpenZeppelin and Polygon, which have been audited.)
 
 - **IssuanceEthereum.sol** (dual-issuance/contracts/issuance/IssuanceEthereum.sol)
 - **IssuancePolygon.sol** (dual-issuance/contracts/issuance/IssuancePolygon.sol)
 
 The issuance contracts, simply stated, accept contributions until the end of the token issuance period and then proportionally distribute the combined 5% issuance amount between all the contributors on both chains. Both contracts are highly similar, except for the message passing methods implemented in order to leverage the Polygon POS token bridge and fxTunnel tunnel, which will pass data between root (IssuanceEthereum) and child (IssuancePolygon).
-
-_Note: The mock-issuance contracts and their unit tests in the test folder are not ready for evaluation._
 
 Major contract functions.
 
