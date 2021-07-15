@@ -8,7 +8,6 @@ pragma solidity ^0.8.0;
 
 import "../core/YoloEthereumUtilityTokens.sol";
 import {IRootChainManager} from "../fx-portal/IRootChainManager.sol";
-// import {Mock_FxBaseRootTunnel} from "../mock-fx/Mock_FxBaseRootTunnel.sol";
 import {IssuanceCommon} from "../issuance/IssuanceCommon.sol";
 import {IssuanceEthereum} from "../issuance/IssuanceEthereum.sol";
 

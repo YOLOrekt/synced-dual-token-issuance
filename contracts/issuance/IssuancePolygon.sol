@@ -168,7 +168,7 @@ contract IssuancePolygon is IssuanceCommon, FxBaseChildTunnel {
         return true;
     }
 
-    // !!! Added virtual for unit testing !!!
+    // !!! Add virtual for unit testing !!!
     // function sendMessageToRoot() internal virtual {
     //     require(
     //         isContributionWindowClosed == true,
@@ -218,8 +218,7 @@ contract IssuancePolygon is IssuanceCommon, FxBaseChildTunnel {
         return true;
     }
 
-    // !!! Added virtual for unit testing !!!
-    function redeemTokens() external virtual override returns (bool) {
+    function redeemTokens() external override returns (bool) {
         require(
             isRedemptionRegimeOpen == true,
             "redemption window is not open yet"
