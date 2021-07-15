@@ -1,0 +1,11 @@
+{
+  "UTConfig": {
+    "name": "Yolo Utility",
+    "symbol": "YOLO",
+    "totalSupply": "1e27"
+  },
+  "STConfig": {
+    "name": "Yolo Liquidity Provider Share",
+    "symbol": "YLP"
+  }
+}
